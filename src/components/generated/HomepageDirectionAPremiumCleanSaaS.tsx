@@ -15,6 +15,12 @@ const finalCtaSteps = ["Lead captured", "AI responds", "Nurture runs", "Appointm
 const footerCompanyName = "AI Vaani Technology Corp.";
 const footerEmail = "info@followuphub.ai";
 const footerLegal = "\u00A9 2026 AI Vaani Technology Corp. \u00B7 Follow Up Hub Real Estate CRM \u00B7 All Rights Reserved.";
+const paymentLinks = {
+  advancedMonthly: "https://api.followuphub.ai/payment-link/6a50b8cdc981f3feae6e866c",
+  advancedAnnual: "https://api.followuphub.ai/payment-link/6a50ecbba655fa0b802a3a0a",
+  basicMonthly: "https://api.followuphub.ai/payment-link/6a50ecd6a655fa0b802a3a0b",
+  basicAnnual: "https://api.followuphub.ai/payment-link/6a50ecf6a655fa0b802a3a0c"
+};
 export const HomepageDirectionAPremiumCleanSaaS = () => {
   const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
   const [openFaq, setOpenFaq] = useState(0);
@@ -28,7 +34,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
         <div className="hidden items-center gap-8 text-sm font-medium text-[#5B6470] md:flex">
           <span>The Gap</span><span>How It Works</span><span>Features</span><span>Pricing</span>
         </div>
-        <button className="rounded-full bg-[#1F5FFF] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started</button>
+        <a href={paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#1F5FFF] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started</a>
       </nav>
 
       <header className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-24 pt-10 lg:grid-cols-[0.92fr_1.08fr]">
@@ -37,7 +43,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
           <h1 className="max-w-4xl text-5xl font-extrabold leading-[0.98] tracking-tight text-[#0E1116] md:text-7xl">Real estate follow-up, built before the lead goes cold.</h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#5B6470] md:text-xl">FollowUpHub is an AI-powered CRM for agents who want a working follow-up system, not another empty database. It can call, text, email, nurture, and book buyer and seller leads using pre-built real estate workflows.</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <button className="rounded-full bg-[#1F5FFF] px-7 py-4 font-bold text-white shadow-[0_16px_48px_rgba(14,17,22,0.08)] transition hover:-translate-y-0.5 hover:bg-[#1749CC] active:scale-[0.98]">Get Started</button>
+            <a href={paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#1F5FFF] px-7 py-4 font-bold text-white shadow-[0_16px_48px_rgba(14,17,22,0.08)] transition hover:-translate-y-0.5 hover:bg-[#1749CC] active:scale-[0.98]">Get Started</a>
             <button className="rounded-full border border-[#ECEBE6] bg-white px-7 py-4 font-bold text-[#1F5FFF] transition hover:-translate-y-0.5 active:scale-[0.98]">See the system</button>
           </div>
           <div className="mt-9 grid max-w-xl grid-cols-3 gap-5 text-sm text-[#5B6470]">
@@ -304,7 +310,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
                       <p className="font-semibold leading-6 text-[#0E1116]">{item}</p>
                     </div>)}
                 </div>
-                <button className="mt-7 w-full rounded-full bg-[#1F5FFF] py-4 font-bold text-white transition hover:bg-[#1749CC] active:scale-[0.98]">Get started</button>
+                <a href={billing === "annual" ? paymentLinks.basicAnnual : paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="mt-7 block w-full rounded-full bg-[#1F5FFF] py-4 text-center font-bold text-white transition hover:bg-[#1749CC] active:scale-[0.98]">Get started</a>
               </div>
               <div className="relative min-w-0 rounded-[28px] border-2 border-[#1F5FFF] bg-white p-7 shadow-[0_30px_90px_-54px_rgba(31,95,255,0.75)] transition duration-300 hover:-translate-y-1">
                 <div className="pricing-orbit absolute right-5 top-5 h-14 w-14 rounded-full border border-[#C9D6FF]" />
@@ -322,7 +328,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
                       <p className="font-semibold leading-6 text-[#0E1116]">{item}</p>
                     </div>)}
                 </div>
-                <button className="mt-7 w-full rounded-full bg-[#E8FF5C] py-4 font-bold text-[#0E1116] transition hover:bg-[#DDF352] active:scale-[0.98]">Get Started</button>
+                <a href={billing === "annual" ? paymentLinks.advancedAnnual : paymentLinks.advancedMonthly} target="_blank" rel="noopener noreferrer" className="mt-7 block w-full rounded-full bg-[#E8FF5C] py-4 text-center font-bold text-[#0E1116] transition hover:bg-[#DDF352] active:scale-[0.98]">Get Started</a>
               </div>
             </div>
             <p className="mt-8 text-center font-semibold text-[#5B6470]">Early access is limited and closes once we hit capacity.</p>
@@ -384,7 +390,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
                   <span className="text-[#1F5FFF]">The fix is here.</span>
                 </h2>
                 <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/66">Stop letting leads die between capture and conversation. Plug into the system built to keep them moving - automatically.</p>
-                <button className="mt-10 rounded-xl bg-[#1F5FFF] px-8 py-5 font-bold text-white shadow-[0_16px_46px_rgba(31,95,255,0.34)] transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started <span className="ml-2">-&gt;</span></button>
+                <a href={paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="mt-10 inline-block rounded-xl bg-[#1F5FFF] px-8 py-5 font-bold text-white shadow-[0_16px_46px_rgba(31,95,255,0.34)] transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started <span className="ml-2">-&gt;</span></a>
                 <p className="mt-6 text-sm font-semibold text-white/40">14-day free trial - Live on day one</p>
               </div>
             </div>
