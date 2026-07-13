@@ -35,7 +35,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
           <span>The Gap</span><span>How It Works</span><span>Features</span><span>Pricing</span>
         </div>
         <div className="flex items-center gap-3">
-          <a href="https://app.followuphub.ai/" target="_blank" rel="noopener noreferrer" className="rounded-full px-5 py-3 text-sm font-semibold text-[#0E1116] transition hover:text-[#1F5FFF]">Login</a>
+          <a href="https://app.followuphub.ai/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#ECEBE6] bg-white px-5 py-3 text-sm font-semibold text-[#0E1116] transition hover:border-[#BFD0FF] hover:text-[#1F5FFF] active:scale-[0.98]">Sign In</a>
           <a href={paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#1F5FFF] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started</a>
         </div>
       </nav>
