@@ -36,7 +36,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
         </div>
         <div className="flex items-center gap-3">
           <a href="https://app.followuphub.ai/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#ECEBE6] bg-white px-5 py-3 text-sm font-semibold text-[#0E1116] transition hover:border-[#BFD0FF] hover:text-[#1F5FFF] active:scale-[0.98]">Sign In</a>
-          <a href={paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#1F5FFF] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started</a>
+          <a href="#pricing" className="rounded-full bg-[#1F5FFF] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started</a>
         </div>
       </nav>
 
@@ -287,7 +287,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
           </div>
         </section>
 
-        <section className="relative overflow-hidden px-5 py-24">
+        <section id="pricing" className="relative overflow-hidden px-5 py-24">
           <div className="absolute inset-0 bg-[#E8EEFF]" />
           <div className="pricing-beam absolute left-1/2 top-0 h-full w-[42rem] -translate-x-1/2 bg-white/60" />
           <div className="relative mx-auto max-w-7xl text-center">
