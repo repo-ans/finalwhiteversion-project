@@ -46,7 +46,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
           <h1 className="max-w-4xl text-5xl font-extrabold leading-[0.98] tracking-tight text-[#0E1116] md:text-7xl">Real estate follow-up, built before the lead goes cold.</h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#5B6470] md:text-xl">FollowUpHub is an AI-powered CRM for agents who want a working follow-up system, not another empty database. It can call, text, email, nurture, and book buyer and seller leads using pre-built real estate workflows.</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href={paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#1F5FFF] px-7 py-4 font-bold text-white shadow-[0_16px_48px_rgba(14,17,22,0.08)] transition hover:-translate-y-0.5 hover:bg-[#1749CC] active:scale-[0.98]">Get Started</a>
+            <a href="#pricing" target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#1F5FFF] px-7 py-4 font-bold text-white shadow-[0_16px_48px_rgba(14,17,22,0.08)] transition hover:-translate-y-0.5 hover:bg-[#1749CC] active:scale-[0.98]">Get Started</a>
             <button className="rounded-full border border-[#ECEBE6] bg-white px-7 py-4 font-bold text-[#1F5FFF] transition hover:-translate-y-0.5 active:scale-[0.98]">See the system</button>
           </div>
           <div className="mt-9 grid max-w-xl grid-cols-3 gap-5 text-sm text-[#5B6470]">
