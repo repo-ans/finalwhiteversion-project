@@ -393,7 +393,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
                   <span className="text-[#1F5FFF]">The fix is here.</span>
                 </h2>
                 <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/66">Stop letting leads die between capture and conversation. Plug into the system built to keep them moving - automatically.</p>
-                <a href={paymentLinks.basicMonthly} target="_blank" rel="noopener noreferrer" className="mt-10 inline-block rounded-xl bg-[#1F5FFF] px-8 py-5 font-bold text-white shadow-[0_16px_46px_rgba(31,95,255,0.34)] transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started <span className="ml-2">-&gt;</span></a>
+                <a href="#pricing" rel="noopener noreferrer" className="mt-10 inline-block rounded-xl bg-[#1F5FFF] px-8 py-5 font-bold text-white shadow-[0_16px_46px_rgba(31,95,255,0.34)] transition hover:bg-[#1749CC] active:scale-[0.98]">Get Started <span className="ml-2">-&gt;</span></a>
                 <p className="mt-6 text-sm font-semibold text-white/40">14-day free trial - Live on day one</p>
               </div>
             </div>
