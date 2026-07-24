@@ -328,7 +328,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
                   <span className="text-5xl font-extrabold tracking-tight">{displayPrice}</span>
                   <span className="pb-2 text-base font-semibold text-[#5B6470]">{displayPeriod}</span>
                 </div>
-                <p className="mt-4 min-h-[3rem] text-sm leading-6 text-[#5B6470]">{billingNote} - self-serve onboarding</p>
+                <p className="mt-4 min-h-[3rem] text-base font-bold leading-6 text-[#5B6470]">{billingNote} - self-serve onboarding</p>
                 <div className="mt-6 space-y-4">
                   {basicPricingFeatures.map(item => <div key={item} className="flex gap-3 border-t border-[#ECEBE6] pt-4">
                       <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#E8FF5C] ring-4 ring-[#F4FFC4]" />
@@ -346,7 +346,7 @@ export const HomepageDirectionAPremiumCleanSaaS = () => {
                   <span className="text-5xl font-extrabold tracking-tight">{displayPrice}</span>
                   <span className="pb-2 text-base font-semibold text-[#5B6470]">{displayPeriod}</span>
                 </div>
-                <p className="mt-4 min-h-[3rem] text-sm leading-6 text-[#5B6470]">{advancedBillingNote}</p>
+                <p className="mt-4 min-h-[3rem] text-base font-bold leading-6 text-[#5B6470]">{advancedBillingNote}</p>
                 <div className="mt-6 space-y-4">
                   {advancedPricingFeatures.map((item, index) => <div key={item} className="flex gap-3 border-t border-[#ECEBE6] pt-4">
                       <span className={`mt-2 h-2 w-2 shrink-0 rounded-full ${index < 3 ? "bg-[#1F5FFF] ring-4 ring-[#E8EEFF]" : "bg-[#E8FF5C] ring-4 ring-[#F4FFC4]"}`} />
